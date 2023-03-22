@@ -6,6 +6,7 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { HeaderComponent } from './pages/landing/components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SeparatorComponent } from './components/separator/separator.component';
+import { MyWorkComponent } from './pages/landing/components/my-work/my-work.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SeparatorComponent } from './components/separator/separator.component';
     LandingComponent,
     HeaderComponent,
     NavbarComponent,
-    SeparatorComponent
+    SeparatorComponent,
+    MyWorkComponent
   ],
   imports: [
     CommonModule,
