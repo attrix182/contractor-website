@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-bottom-left-radius: 50% 12%;
+  border-bottom-right-radius: 50% 12%;
+  position: relative;
+
+  #landing-image {
+    background-image: url(../../../../../../assets/img/plumbers.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 50vw;
+  }
+}
+
+.greeting-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 25vh;
+  left: 15vw;
+  flex-direction: column;
+  p{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+
+  button{
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      background-color: var(--tertiary-color);
+    }
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+  }
+  .image-container{
+    justify-content: center;
+    height: 50vh;
+    #landing-image{
+      height: 40vh;
+      width: 80vw;
+    }
+  }
+  .greeting-container{
+    top: 30vh;
+    left: 0;
+    width: 100%;
+    p{
+      font-size: 1.5rem;
+    }
+    button{
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
