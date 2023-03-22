@@ -1,13 +1,57 @@
-section{
+section {
   display: flex;
   flex-direction: column;
   margin-top: 2vh;
+  margin-bottom: 2vh;
 
-  .title{
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 1rem;
-  margin:auto;
+  .title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    margin: auto;
+  }
+
+  .card {
+    padding: 15px;
+    background-color: var(--primary-color);
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    border-top-left-radius: 50% 12%;
+    border-top-right-radius: 50% 12%;
+  }
+
+  form {
+    label {
+      color: var(--secondary-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+      height: 2.5rem;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #000000;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        border: none;
+        background-color: var(--secondary-color);
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: var(--tertiary-color);
+      }
+    }
   }
 }

@@ -6,6 +6,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  showBrand = false;
   constructor() {}
 
   ngOnInit(): void {}
@@ -20,8 +21,10 @@ export class NavbarComponent implements OnInit {
 
     if (clientPosition > heightHeader) {
       document.getElementById('navbar')?.classList.add('navbar-fixed');
+      this.showBrand = true;
     } else {
       document.getElementById('navbar')?.classList.remove('navbar-fixed');
+      this.showBrand = false;
     }
   }
 }

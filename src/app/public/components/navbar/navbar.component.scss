@@ -1,6 +1,6 @@
 nav {
   position: absolute;
-  right: 10vw;
+  left: 3vw;
   top: 1vh;
   z-index: 10;
   background-color: var(--primary-color);
@@ -37,13 +37,24 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  width: 30%;
+  width: 65%;
   margin: 0 auto;
 }
 
+.navbar-brand{
+ cursor: pointer;
+ margin: auto;
+ padding-right: 56px;
+ color: var(--secondary-color);
+}
+.navbar-brand:hover{
+  color: var(--tertiary-color);
+}
+
+
+
 @media (max-width: 1000px) {
   .navbar-fixed {
-width: 85%;
+    width: 65%;
   }
-
 }

@@ -2,6 +2,13 @@ section {
   display: flex;
   flex-direction: column;
   margin-top: 2vh;
+  background-color: var(--secondary-color);
+  border-top-left-radius: 40% 8%;
+  border-top-right-radius: 40% 8%;
+
+  border-bottom-left-radius: 50% 8%;
+  border-bottom-right-radius: 50% 8%;
+  padding: 3em;
 
   .gallery {
     margin-top: 20px;
@@ -10,7 +17,7 @@ section {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
-    .card {
+    .card-c {
       width: 190px;
       height: 274px;
       background: white;
@@ -18,7 +25,7 @@ section {
       border-radius: 6px;
     }
 
-    .card-image {
+    .card-image-c {
       background-image: url('../../../../../../assets/img/11156.jpg');
       background-size: cover;
       background-position: center;
@@ -27,7 +34,7 @@ section {
       border-radius: 6px 6px 0 0;
     }
 
-    .card-image:hover {
+    .card-image-c:hover {
       transform: scale(0.98);
     }
 
@@ -77,3 +84,5 @@ section {
   margin-bottom: 1rem;
   margin: auto;
 }
+
+
