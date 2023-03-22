@@ -1,15 +1,20 @@
-nav{
-  position: absolute;
+nav {
+  position: fixed;
   right: 10vw;
   top: 1vh;
   z-index: 10;
-  ul{
+  background-color: var(--primary-color);
+  width: 80vw;
+  border-radius: 5px;
+  padding: 5px;
+
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    li{
+    li {
       display: inline-block;
-      a{
+      a {
         display: block;
         padding: 6px 12px;
         text-decoration: none;
@@ -17,7 +22,7 @@ nav{
         font-weight: 500;
         font-size: 1.2em;
         transition: all 0.3s ease-in-out;
-        &:hover{
+        &:hover {
           color: var(--tertiary-color);
           scale: 1.1;
         }
