@@ -12,4 +12,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToElement(section: string) {
+    const $element = document.getElementById(section);
+    $element?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+  }
+
 }
