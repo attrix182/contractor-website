@@ -7,16 +7,16 @@ section {
   .title {
     font-size: 2.2rem;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 1rem;
     margin: auto;
   }
 
   .card {
     padding: 15px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     margin: auto;
-    width: 90%;
+    width: 100%;
     height: 100%;
     border-top-left-radius: 50% 12%;
     border-top-right-radius: 50% 12%;

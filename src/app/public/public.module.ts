@@ -9,6 +9,7 @@ import { ContactComponent } from './pages/landing/components/contact/contact.com
 import { WppButtonComponent } from './components/wpp-button/wpp-button.component';
 import { FooterComponent } from './pages/landing/components/footer/footer.component';
 import { TopContactComponent } from './pages/landing/components/top-contact/top-contact.component';
+import { ServicesComponent } from './pages/landing/components/services/services.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { TopContactComponent } from './pages/landing/components/top-contact/top-
     ContactComponent,
     WppButtonComponent,
     FooterComponent,
-    TopContactComponent
+    TopContactComponent,
+    ServicesComponent
   ],
   imports: [
     CommonModule,
