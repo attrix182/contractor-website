@@ -17,63 +17,76 @@ section {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
-    .card-c {
-      width: 190px;
-      height: 274px;
-      background: white;
-      padding: 0.4em;
-      border-radius: 6px;
-    }
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+  .card-c {
+    width: 190px;
+    height: 274px;
+    background: white;
+    padding: 0.4em;
+    border-radius: 6px;
+  }
 
-    .card-image-c {
-      background-image: url('../../../../../../assets/img/work-example-1.jpg');
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 60%;
-      border-radius: 6px 6px 0 0;
-    }
+  .card-image-c {
+    background-image: url('../../../../../../assets/img/work-example-1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
 
-    .card-image-c:hover {
-      transform: scale(0.98);
-    }
+  .card-image-c-2 {
+    background-image: url('../../../../../../assets/img/work-example-1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
 
-    .category {
-      text-transform: uppercase;
-      font-size: 0.7em;
-      font-weight: 600;
-      color: var(--secondary-color);
-      padding: 10px 7px 0;
-    }
+  .card-image-c:hover {
+    transform: scale(0.98);
+  }
 
-    .category:hover {
-      cursor: pointer;
-    }
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: var(--secondary-color);
+    padding: 10px 7px 0;
+  }
 
-    .heading {
-      font-weight: 600;
-      color: rgb(88, 87, 87);
-      padding: 7px;
-    }
+  .category:hover {
+    cursor: pointer;
+  }
 
-    .heading:hover {
-      cursor: pointer;
-    }
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
 
-    .author {
-      color: gray;
-      font-weight: 400;
-      font-size: 11px;
-      padding-top: 20px;
-    }
+  .heading:hover {
+    cursor: pointer;
+  }
 
-    .name {
-      font-weight: 600;
-    }
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
 
-    .name:hover {
-      cursor: pointer;
-    }
+  .name {
+    font-weight: 600;
+  }
+
+  .name:hover {
+    cursor: pointer;
   }
 }
 
@@ -84,5 +97,3 @@ section {
   margin-bottom: 1rem;
   margin: auto;
 }
-
-

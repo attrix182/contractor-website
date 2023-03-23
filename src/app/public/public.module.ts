@@ -10,6 +10,7 @@ import { WppButtonComponent } from './components/wpp-button/wpp-button.component
 import { FooterComponent } from './pages/landing/components/footer/footer.component';
 import { TopContactComponent } from './pages/landing/components/top-contact/top-contact.component';
 import { ServicesComponent } from './pages/landing/components/services/services.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ServicesComponent } from './pages/landing/components/services/services.
   ],
   imports: [
     CommonModule,
+    NgbCarouselModule,
     PublicRoutingModule
   ]
 })

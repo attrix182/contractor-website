@@ -1,23 +1,34 @@
 <section>
-  <h1 class="title">My work</h1>
-  <div class="gallery">
-    <div class="card-c" (click)="openDetail()">
-      <div class="card-image-c"></div>
-      <div class="category">Work 1</div>
-      <div class="heading">A heading that must span over two lines</div>
-    </div>
-    <div class="card-c">
-      <div class="card-image-c"></div>
-      <div class="category">Work 2</div>
-      <div class="heading">A lot of pipes</div>
-    </div>
-    <div class="card-c">
-      <div class="card-image-c-2"></div>
-      <div class="category">Work 3</div>
-      <div class="heading">A pipe with a lot of work</div>
-    </div>
-  </div>
-</section>
+  <h1 class="title">Services</h1>
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <article class="card-container">
+        <div class="card-c" (click)="openDetail()">
+          <div class="card-image-c"></div>
+          <div class="category">Work 1</div>
+          <div class="heading">A heading that must span over two lines</div>
+        </div>
+      </article>
+    </ng-template>
+    <ng-template ngbSlide>
+      <article class="card-container">
+        <div class="card-c">
+          <div class="card-image-c"></div>
+          <div class="category">Work 2</div>
+          <div class="heading">A lot of pipes</div>
+        </div>
+      </article>
+    </ng-template>
+    <ng-template ngbSlide>
+      <article class="card-container">
+          <div class="card-c">
+            <div class="card-image-c-2"></div>
+            <div class="category">Work 3</div>
+            <div class="heading">A pipe with a lot of work</div>
+          </div>
+      </article>
+    </ng-template>
+  </ngb-carousel>
 
 <ng-template #detailModal let-modal>
   <div class="modal-header">
